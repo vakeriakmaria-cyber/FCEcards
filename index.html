@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCE Writing Phrases</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .card {
+            width: 300px;
+            height: 200px;
+            perspective: 1000px;
+        }
+        .card-inner {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .card.is-flipped .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.1em;
+            text-align: center;
+            padding: 15px;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        .card-front {
+            background-color: #FFE135;
+            color: white;
+        }
+        .card-back {
+            background-color: #f9f9f9;
+            color: #333;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">People often state that….</div><div class="card-back">Люди часто утверждают, что …..</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">Many people feel that….</div><div class="card-back">Многие люди полагают, что ……</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">One often hears people say that….</div><div class="card-back">Можно часто услышать, что люди говорят, что ..</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">It is believed that ….</div><div class="card-back">Принято думать, что …..</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">It is true that….</div><div class="card-back">Это правда, что …..</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">It is often said that ….</div><div class="card-back">Часто говорят, что …..</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">However, some people disagree</div><div class="card-back">Однако, многие люди не соглашаются с тем, что ….</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">Firstly / secondly / thirdly</div><div class="card-back">Прежде всего / кроме того / в третьих</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">First / second of all</div><div class="card-back">Во-первых / во-вторых</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">Finally</div><div class="card-back">В результате, в конечном итоге</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">In conclusion</div><div class="card-back">В заключении, подводя итоги</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">To sum up …</div><div class="card-back">Подводя итоги, обобщая сказанное</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">Owing to …</div><div class="card-back">Благодаря, вследствие, за счет</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">In the light of ….</div><div class="card-back">С учетом, учитывая</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">As a result of ….</div><div class="card-back">Из-за, по причине, в результате</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">As I see it …..</div><div class="card-back">Как я это понимаю, как мне кажется</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">In my opinion ….</div><div class="card-back">По-моему</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">It seems to me that …..</div><div class="card-back">Мне кажется, что</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">For me the gist of the matter is that ….</div><div class="card-back">Для меня суть дела заключается в том, что</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">If one compares (…) to (…)</div><div class="card-back">Если сравнить …. с …….</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">The former …., the latter ….</div><div class="card-back">Первый …., последний -</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">There is some similarity between ….</div><div class="card-back">Есть некоторая схожесть между</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">Another reason why….</div><div class="card-back">Еще одна причина почему</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">In addition to this …</div><div class="card-back">В добавок к этому</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">Moreover, ….</div><div class="card-back">Более того</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">Furthermore….</div><div class="card-back">Кроме того</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">What is more ….</div><div class="card-back">Помимо этого, к тому же</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">However, ….</div><div class="card-back">Однако</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">Although ….</div><div class="card-back">Хотя</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">Alternatively, …</div><div class="card-back">Как вариант, с другой стороны</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">Consequently, …</div><div class="card-back">Следовательно, поэтому</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">As a result ….</div><div class="card-back">В результате</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">Hence, ….</div><div class="card-back">В связи с этим, следовательно</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">It is often said / asserted / believed that ….</div><div class="card-back">Часто говорят, полагают, что</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">It is a well-known fact that ….</div><div class="card-back">Это хорошо известный факт, что</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">For the great majority of people ….</div><div class="card-back">Для большинства людей</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">The problem that is debated nowadays is ….</div><div class="card-back">Проблема, обсуждаемая в настоящее время, заключается в том, что</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">One of the most striking aspects of the problem is ….</div><div class="card-back">Один из наиболее поразительных аспектов проблемы заключается в том, что</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">It is universally acknowledged that ….</div><div class="card-back">Это повсеместно известно, что</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">Added to that, ….</div><div class="card-back">В добавок к вышеизложенному</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">On the one hand, … / on the other hand, ….</div><div class="card-back">С одной стороны, с другой стороны</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">As for ….</div><div class="card-back">Что касается</div></div></div>
+    <div class="card" onclick="this.classList.toggle('is-flipped');"><div class="card-inner"><div class="card-front">As regards ….</div><div class="card-back">В отношении, по поводу</div></div></div>
+
+</body>
+</html>
